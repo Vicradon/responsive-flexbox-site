@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css">
+  <title>Learning Flexbox fcc</title>
+</head>
+<body>
+  <h1>Flex Order</h1>
+  <p>Decleared by fixing <code>style = "order:n"</code> to a flex  item. The order is set for that item while other items will have an order less--. Order takes precedence in magnitude of the gven order</p>
+  <div class="container">
+    <ul class="flex-container">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+    </ul>
+  </div>
+  <h1>Flex grow</h1>
+  <p>How fast a flex item would grow relative to others. Decleared by setting the <code>style = "flex-grow: 5"</code> to that particular flex item. It's basically a ratio of how one flex item grows relative to the others</p>
+  <div class="flex-container">
+    <div style="flex-grow: 1">1</div>
+    <div style="flex-grow: 4">2</div>
+    <div style="flex-grow: 8">3</div> 
+  </div>
+  <h1>Flex basis</h1>
+  <p>The specific width and height of flex items. The width doesn't changed except forced to by the situation</p>
+  <div class="flex-container">
+    <div>1</div>
+    <div>2</div>
+    <div style="flex-basis: 600px;">3</div> 
+  </div>
+  <h1>Align self</h1>
+  <p>The align self property still applies to flex items</p>
+  <div class="flex-container" style="height: 200px">
+    <div>1</div>
+    <div>2</div>
+    <div style="align-self: flex-end">3</div>
+    <div>4</div>
+  </div>
+  <div>
+      <a href="./challenge.html"><button style="margin-top:5vh" class = 'change_page'>Go to Challenge</button></a>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
