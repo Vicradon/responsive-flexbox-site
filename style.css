@@ -3,7 +3,7 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
   border: 1px solid red;
-  padding: 0;
+  padding:0;
   background-color: #e8e8e9;
   justify-content: space-around;
   align-items: center;
@@ -33,7 +33,7 @@ code {
   background-color: #e8e8e9;
   justify-content: space-around;
   align-items: center;
-  height: 20vh;
+  height: 40vh;
 }
 .flex-container div {
   width: 100px;  
@@ -167,7 +167,8 @@ footer h3 {
     font-weight: bold;
   }
   .change_page {
-    width: 20vw;
+    width: 30vw;
+    height: 10vh;
   }
 
   /* .menu:hover .hidden_nav{
@@ -181,4 +182,16 @@ footer h3 {
   /* .links {
     flex-flow: column wrap;
   } */
+}
+@media (max-width:400px){
+  .change_page {
+    width: 40vw;
+    height: 6vh;
+  }
+}
+@media (max-width:400px){
+  .change_page {
+    width: 40vw;
+    height: 9vh;
+  }
 }
